@@ -6,12 +6,14 @@
     "configurations": [
         
         {
-            "name": "Python: Current File",
+            "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true
         }
     ]
 }
